@@ -2,16 +2,19 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ONG Esperança Viva</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- CABEÇALHO + MENU -->
     <header>
       <div class="container header-inner">
         <a class="brand" href="index.html">
-          <span class="brand-logo" aria-hidden="true"></span>
+          <img
+            src="./img/logo.svg"
+            alt="Logo da ONG Esperança Viva"
+            class="brand-logo"
+          />
           <h1>ONG Esperança Viva</h1>
         </a>
         <nav>
@@ -24,14 +27,20 @@
       </div>
     </header>
 
-    <!-- A PARTIR DAQUI É O <main> -->
     <main class="container">
-      <!-- ✅ HERO “logo após <main>” (cole isso aqui) -->
+      <!-- imagem obrigatória da página -->
+      <section class="banner">
+        <img
+          src="./img/home-hero.svg"
+          alt="Banner acolhedor da ONG Esperança Viva"
+        />
+      </section>
+
       <section class="hero">
         <h2>Juntos transformamos realidades</h2>
         <p class="muted">
-          Sua contribuição ajuda a levar educação, saúde e dignidade para quem
-          mais precisa.
+          Sua contribuição leva educação, saúde e dignidade para quem mais
+          precisa.
         </p>
         <p style="margin-top: 12px">
           <a class="btn" href="cadastro.html">Quero ser voluntário(a)</a>
@@ -43,23 +52,18 @@
           >
         </p>
       </section>
-      <!-- 🔚 Fim do HERO -->
 
-      <!-- SUAS SEÇÕES (Missão, Visão, Valores) -->
       <section>
         <h2>Missão</h2>
         <p>
-          Promover a inclusão social de famílias em situação de vulnerabilidade,
-          oferecendo projetos educacionais, culturais e de saúde.
+          Promover inclusão social com projetos educacionais, culturais e de
+          saúde.
         </p>
       </section>
 
       <section>
         <h2>Visão</h2>
-        <p>
-          Ser referência nacional em impacto social positivo até 2030, ampliando
-          oportunidades para comunidades carentes.
-        </p>
+        <p>Ser referência nacional em impacto social positivo até 2030.</p>
       </section>
 
       <section>
@@ -73,13 +77,9 @@
       </section>
     </main>
 
-    <!-- RODAPÉ -->
     <footer>
       <div class="container center">
         <small>© 2025 ONG Esperança Viva · Feito com carinho 💛</small>
-        <p class="muted">
-          Email: contato@esperancaviva.org · Tel: (11) 98765-4321 · São Paulo/SP
-        </p>
       </div>
     </footer>
   </body>
