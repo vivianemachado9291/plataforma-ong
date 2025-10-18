@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#eafff7"/>
+      <stop offset="1" stop-color="#fff1e1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <circle cx="200" cy="120" r="60" fill="#2ba89a" opacity=".25"/>
+  <circle cx="350" cy="220" r="40" fill="#ffb86b" opacity=".25"/>
+  <circle cx="980" cy="160" r="70" fill="#2ba89a" opacity=".18"/>
+  <text x="50%" y="54%" text-anchor="middle" font-family="Inter, Arial" font-size="36" fill="#2b2b2b">Bem-vindo(a) à ONG Esperança Viva</text>
+</svg>
