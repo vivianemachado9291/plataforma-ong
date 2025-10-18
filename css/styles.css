@@ -1,4 +1,4 @@
-/* ---------- Base / Reset ---------- */
+/* ---------- Reset + Tokens ---------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,12 +6,12 @@
 }
 :root {
   --bg: #fff8f2;
-  --surface: #ffffff;
+  --surface: #fff;
   --text: #2b2b2b;
   --muted: #6b7280;
-  --brand: #2ba89a; /* verde-água acolhedor */
+  --brand: #2ba89a;
   --brand-700: #238a7f;
-  --accent: #ffb86b; /* laranja quentinho */
+  --accent: #ffb86b;
   --ring: rgba(43, 168, 154, 0.25);
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
@@ -20,7 +20,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font: 16px/1.6 "Inter", system-ui, -apple-system, Arial, sans-serif;
+  font: 16px/1.6 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
   color: var(--text);
   background: radial-gradient(
       1200px 600px at 80% -10%,
@@ -36,12 +37,15 @@ body {
   width: min(1000px, 92%);
   margin: auto;
 }
+main.container {
+  padding: 20px 0;
+}
 section {
-  margin: 48px 0;
+  margin: 36px 0;
 }
 section > h2 {
   font-size: 1.8rem;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   color: var(--brand-700);
 }
 ul {
@@ -57,7 +61,7 @@ header {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(6px);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.75);
   border-bottom: 1px solid #f0f0f0;
 }
 .header-inner {
@@ -65,30 +69,30 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 14px 0;
+  padding: 12px 0;
 }
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
+  color: inherit;
 }
 .brand-logo {
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: linear-gradient(135deg, var(--brand), var(--accent));
   box-shadow: var(--shadow);
+  object-fit: cover;
 }
 .brand h1 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   letter-spacing: 0.3px;
 }
-
 nav ul {
   list-style: none;
   display: flex;
-  gap: 14px;
+  gap: 12px;
 }
 nav a {
   text-decoration: none;
@@ -105,27 +109,37 @@ nav a[aria-current="page"] {
   color: #fff;
 }
 
-/* ---------- Hero (opcional na home) ---------- */
+/* ---------- Hero & Imagens ---------- */
 .hero {
-  margin: 28px 0 8px;
-  padding: 28px;
+  margin: 20px 0 8px;
+  padding: 22px;
   border-radius: var(--radius);
   background: linear-gradient(180deg, #ffffffcc, #ffffffaa);
   box-shadow: var(--shadow);
 }
 .hero h2 {
   font-size: 2rem;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
-.hero p {
+.muted {
   color: var(--muted);
+}
+
+.banner img,
+.voluntariado-img img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin: 18px 0 8px;
 }
 
 /* ---------- Cards ---------- */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 18px;
+  gap: 16px;
 }
 .card {
   background: var(--surface);
@@ -151,7 +165,7 @@ button,
   border-radius: 12px;
   text-decoration: none;
   display: inline-block;
-  transition: 0.2s transform, 0.2s box-shadow, 0.2s background;
+  transition: 0.2s transform, 0.2s background;
   box-shadow: 0 6px 16px var(--ring);
 }
 button:hover,
@@ -160,7 +174,7 @@ button:hover,
   transform: translateY(-1px);
 }
 
-/* ---------- Formulário (cadastro.html) ---------- */
+/* ---------- Formulário ---------- */
 form {
   background: var(--surface);
   padding: 22px;
@@ -191,8 +205,8 @@ input[type="date"] {
   border-radius: 10px;
   border: 1px solid #ddd;
   outline: none;
-  transition: 0.2s border, 0.2s box-shadow;
   background: #fff;
+  transition: 0.2s border, 0.2s box-shadow;
 }
 input:focus {
   border-color: var(--brand);
@@ -206,20 +220,14 @@ input:focus {
 
 /* ---------- Footer ---------- */
 footer {
-  margin-top: 48px;
-  padding: 24px 0;
+  margin-top: 36px;
+  padding: 20px 0;
   background: linear-gradient(135deg, #eafff7, #fff1e1);
   border-top: 1px solid #f0f0f0;
 }
-footer p,
-footer small {
-  color: #4b5563;
-}
-
-/* ---------- Helpers ---------- */
-.muted {
-  color: var(--muted);
-}
-.center {
-  text-align: center;
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
 }
