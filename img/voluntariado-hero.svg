@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bg2" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eafff7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg2)"/>
+  <path d="M200,240 q80,-120 160,0 q80,-120 160,0" fill="none" stroke="#2ba89a" stroke-width="8" opacity=".5"/>
+  <path d="M700,220 q60,-90 120,0 q60,-90 120,0" fill="none" stroke="#ffb86b" stroke-width="8" opacity=".5"/>
+  <text x="50%" y="56%" text-anchor="middle" font-family="Inter, Arial" font-size="28" fill="#2b2b2b">Voluntariado e Projetos em Ação</text>
+</svg>
